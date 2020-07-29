@@ -57,7 +57,7 @@
 
     <!-- /Yandex.Metrika counter -->
     <!-- <!— calltouch —>
-<script src="https://mod.calltouch.ru/init.js?id=t1re6pih"></script> 
+<script src="https://mod.calltouch.ru/init.js?id=t1re6pih"></script>
     <!— /calltouch —> -->
 </head>
 <body>
@@ -187,7 +187,7 @@
                                     <p class="time">круглосуточно | 1290р</p>
                                 </div>
                                 <div class="article_gallery">
-                                    <div class="slider-for-1 slider-for">
+                                    <div class="slider-for-1 slider-for-1--mobile slider-for">
                                         <div><img src="img/gallery/japan/yaponia_1.jpg" alt=""></div>
                                         <div><img src="img/gallery/japan/yaponia_2.jpg" alt=""></div>
                                         <div><img src="img/gallery/japan/yaponia_3.jpg" alt=""></div>
@@ -1230,7 +1230,6 @@
         asNavFor: '.slider-nav-1'
     });
 
-
     $('.slider-nav-1').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -1285,14 +1284,14 @@
     });
 
     // Слайдер для моб версии
-    $('.slider__for').slick({
+    $('.slider__for--mobile').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         fade: false,
         asNavFor: '.slider__nav'
     });
-    $('.slider__nav').slick({
+    $('.slider__nav--mobile').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
         asNavFor: '.slider__for',
@@ -1300,7 +1299,6 @@
         centerMode: false,
         focusOnSelect: true
     });
-
 </script>
 </body>
 </html>
