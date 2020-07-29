@@ -1,0 +1,11 @@
+AddDefaultCharset utf-8
+RewriteEngine on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+
+<ifmodule mod_expires.c>
+<filesmatch ".(jpg|jpeg|gif|png|ico|css|js|obj)$">
+ExpiresActive on
+ExpiresDefault "access plus 1 month"
+</filesmatch>
+</ifmodule>
