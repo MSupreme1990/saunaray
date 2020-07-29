@@ -140,7 +140,7 @@
                     <h1>Наши сауны</h1>
                     <span class="fas fa-infinity"></span>
                 </div>
-                <div class="slider__nav">
+                <div class="slider__nav--main">
                     <div><p>#1 «Япония»</p></div>
                     <div><p>#2 «Ад»</p></div>
                     <div><p>#3 «Эдэм»</p></div>
@@ -150,7 +150,7 @@
                     <div><p>#7 «Москва»</p></div>
                     <div><p>#8 «Баку»</p></div>
                 </div>
-                <div class="slider__for">
+                <div class="slider__for--main">
                     <div>
                         <div class="tab-panel">
                             <div class="aside">
@@ -187,7 +187,7 @@
                                     <p class="time">круглосуточно | 1290р</p>
                                 </div>
                                 <div class="article_gallery">
-                                    <div class="slider-for-1 slider-for-1--mobile slider-for">
+                                    <div id="gallery1" class="slider-for-1--gallery slider-for">
                                         <div><img src="img/gallery/japan/yaponia_1.jpg" alt=""></div>
                                         <div><img src="img/gallery/japan/yaponia_2.jpg" alt=""></div>
                                         <div><img src="img/gallery/japan/yaponia_3.jpg" alt=""></div>
@@ -199,9 +199,8 @@
                                         <div><img src="img/gallery/japan/yaponia_9.jpg" alt=""></div>
                                         <div><img src="img/gallery/japan/yaponia_10.jpg" alt=""></div>
                                         <div><img src="img/gallery/japan/yaponia_11.jpg" alt=""></div>
-
                                     </div>
-                                    <div class="slider-nav-1 slider-nav">
+                                    <div id="nav1" class="slider-nav-1--gallery slider-nav">
                                         <div><img src="img/gallery/japan/yaponia_1.jpg" alt=""></div>
                                         <div><img src="img/gallery/japan/yaponia_2.jpg" alt=""></div>
                                         <div><img src="img/gallery/japan/yaponia_3.jpg" alt=""></div>
@@ -1222,83 +1221,90 @@
 
 <script src="js/modal.js"></script>
 <script>
-    $('.slider-for-1').slick({
+    // $('.conditions_block_mobile').slick({
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    //     arrows: true,
+    //     responsive: [
+    //         {
+    //             breakpoint: 550,
+    //             settings: {
+    //                 slidesToShow: 2,
+    //             }
+    //         }
+    //     ]
+    // });
+    //
+    // $('.nav-slider').slick({
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    //     arrows: false,
+    //     responsive: [
+    //         {
+    //             breakpoint: 550,
+    //             settings: {
+    //                 slidesToShow: 2,
+    //             }
+    //         }
+    //     ]
+    // });
+    //
+    // $('.slider').slick({
+    //     arrows: false,
+    //     dots: false,
+    //     slidesToShow: 2,
+    //     slidesToScroll: 1,
+    //     responsive: [
+    //         {
+    //             breakpoint: 550,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //             }
+    //         }
+    //     ]
+    // });
+
+    $('.slider-for-1--gallery').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavFor: '.slider-nav-1'
+        asNavFor: '#nav1'
     });
 
-    $('.slider-nav-1').slick({
+    $('.slider-nav-1--gallery').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        asNavFor: '.slider-for-1',
+        asNavFor: '#gallery1',
         dots: false,
         centerMode: true,
         arrows: false,
-        focusOnSelect: true
+        // focusOnSelect: true
     });
 
-    $('.conditions_block_mobile').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: true,
-        responsive: [
-            {
-                breakpoint: 550,
-                settings: {
-                    slidesToShow: 2,
-                }
-            }
-        ]
-    });
-
-    $('.nav-slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: false,
-        responsive: [
-            {
-                breakpoint: 550,
-                settings: {
-                    slidesToShow: 2,
-                }
-            }
-        ]
-    });
-
-    $('.slider').slick({
-        arrows: false,
-        dots: false,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 550,
-                settings: {
-                    slidesToShow: 1,
-                }
-            }
-        ]
-    });
-
-    // Слайдер для моб версии
-    $('.slider__for--mobile').slick({
+    $('.slider__for--main').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         fade: false,
-        asNavFor: '.slider__nav'
+        asNavFor: '.slider__nav--main'
     });
-    $('.slider__nav--mobile').slick({
-        slidesToShow: 2,
+    $('.slider__nav--main').slick({
+        slidesToShow: 1,
         slidesToScroll: 1,
-        asNavFor: '.slider__for',
-        dots: false,
-        centerMode: false,
-        focusOnSelect: true
+        arrows: false,
+        fade: false,
+        asNavFor: '.slider__for--main'
     });
+    $('.slider-for-1--gallery, .slider-nav-1--gallery')
+        .on('touchstart touchmove mousemove mouseenter', e => {
+            $('.slider__for--main').slick('slickSetOption', 'swipe', false, false);
+            $('.slider__nav--main').slick('slickSetOption', 'swipe', false, false);
+        })
+        .on('touchend mouseover mouseout', e => {
+            $('.slider__for--main').slick('slickSetOption', 'swipe', true, false);
+            $('.slider__nav--main').slick('slickSetOption', 'swipe', true, false);
+        });
 </script>
 </body>
 </html>
