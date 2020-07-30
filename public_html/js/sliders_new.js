@@ -308,4 +308,33 @@ $(document).ready(function () {
         centerMode: true,
         arrows: true,
     });
+
+});
+
+// Переключатель на нужный слайд по саунам
+$(document).on('click', '.global-nav__slider', e => {
+    let $target = $(e.target).closest('.global-nav__item');
+
+    $('.slider__for--main').slick('slickGoTo', $target.index());
+
+
+
+});
+
+const HEADER_OFFSET = 71;
+const SCROLL_SPEED = 800;
+
+$(document).on('click', '[data-scroll]', e => {
+
+    event.preventDefault();
+
+    let $source = $(e.target).closest('[data-scroll]'),
+        $target = $($source.attr('data-scroll'))
+
+    if ($target.length > 0) {
+        $('body,html').animate(
+            { scrollTop: $target.offset().top - 30 - HEADER_OFFSET },
+            SCROLL_SPEED
+        )
+    }
 });

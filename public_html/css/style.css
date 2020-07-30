@@ -1872,5 +1872,21 @@ html {
     .section-3 .title h1 {
         margin-top: 16px;
     }
+
+    .global-nav__slider {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 48px;
+    }
+
+    .global-nav__item p {
+        font-family: Navigo-Regular;
+        font-size: 14px;
+        border-bottom: 1px solid black;
+        color: black;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
 }
 /* Конец правок от 30 июля 2020*/
