@@ -169,7 +169,7 @@ $(document).ready(function () {
     $('.slider-for-1--gallery').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         fade: true,
         asNavFor: '#nav1'
     });
@@ -187,7 +187,7 @@ $(document).ready(function () {
     $('.slider-for-2--gallery').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         fade: true,
         asNavFor: '#nav2'
     });
@@ -205,7 +205,7 @@ $(document).ready(function () {
     $('.slider-for-3--gallery').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         fade: true,
         asNavFor: '#nav3'
     });
@@ -223,7 +223,7 @@ $(document).ready(function () {
     $('.slider-for-4--gallery').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         fade: true,
         asNavFor: '#nav4'
     });
@@ -241,7 +241,7 @@ $(document).ready(function () {
     $('.slider-for-5--gallery').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         fade: true,
         asNavFor: '#nav5'
     });
@@ -259,7 +259,7 @@ $(document).ready(function () {
     $('.slider-for-6--gallery').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         fade: true,
         asNavFor: '#nav6'
     });
@@ -277,7 +277,7 @@ $(document).ready(function () {
     $('.slider-for-7--gallery').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         fade: true,
         asNavFor: '#nav7'
     });
@@ -295,7 +295,7 @@ $(document).ready(function () {
     $('.slider-for-8--gallery').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         fade: true,
         asNavFor: '#nav8'
     });

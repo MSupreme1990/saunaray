@@ -1154,7 +1154,7 @@ footer .container {
     width: 100%;
   }
   .article .aside_block_1 {
-    display: block;
+      display: block;
   }
   .article .aside_block_2 {
     display: block;
@@ -1841,4 +1841,19 @@ html {
     color: #0090d3;
 }
 
+
+@media (max-width: 950px) {
+
+    .article .aside_block_1 {
+        height: 280px;
+    }
+
+    .article .aside_block_1 h2 {
+        font-size: 16px;
+    }
+
+    .article .aside_block_1 p {
+        font-size: 14px;
+    }
+}
 /* Конец правок от 30 июля 2020*/
