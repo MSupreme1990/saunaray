@@ -1841,6 +1841,10 @@ html {
     color: #0090d3;
 }
 
+.slider__nav--main .slick-active:focus {
+    outline: none;
+}
+
 
 @media (max-width: 950px) {
 
