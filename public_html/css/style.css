@@ -1845,7 +1845,7 @@ html {
 @media (max-width: 950px) {
 
     .article .aside_block_1 {
-        height: 280px;
+        height: 250px;
     }
 
     .article .aside_block_1 h2 {
@@ -1854,6 +1854,23 @@ html {
 
     .article .aside_block_1 p {
         font-size: 14px;
+    }
+
+    .article .aside_block_1 h3 {
+        margin-top: 8px;
+        font-size: 12px;
+    }
+
+    .price {
+        color: indianred;
+    }
+
+    .article .aside_block_2 {
+        display: none;
+    }
+
+    .section-3 .title h1 {
+        margin-top: 16px;
     }
 }
 /* Конец правок от 30 июля 2020*/
