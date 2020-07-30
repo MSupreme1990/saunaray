@@ -1827,7 +1827,7 @@ html {
 
 .slider__nav--main .slick-prev {
     left: 0;
-    transform: translateY(-50%);
+    transform: translateY(-60%);
     z-index: 15;
 
 }
