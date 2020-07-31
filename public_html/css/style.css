@@ -1883,6 +1883,10 @@ html {
         margin-top: 32px;
     }
 
+    .global-nav__item {
+        text-align: center;
+    }
+
     .global-nav__item p {
         font-family: Navigo-Regular;
         font-size: 14px;
