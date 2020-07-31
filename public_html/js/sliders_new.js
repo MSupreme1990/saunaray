@@ -160,11 +160,14 @@ $(document).ready(function () {
         .on('touchend mouseover mouseout', e => {
             $('.slider__for--main').slick('slickSetOption', 'swipe', true, false);
             $('.slider__nav--main').slick('slickSetOption', 'swipe', true, false);
+        })
+        .on('click', e => {
+            $('.slider__for--main').slick('slickSetOption', 'swipe', true, false);
+            $('.slider__nav--main').slick('slickSetOption', 'swipe', true, false);
         });
 
 
     // Вложенные слайдеры
-
     // 1 галлерея
     $('.slider-for-1--gallery').slick({
         slidesToShow: 1,
