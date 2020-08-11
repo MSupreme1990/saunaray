@@ -1900,5 +1900,9 @@ html {
         margin-top: 16px;
     }
 
+    .article .aside_block_1 p.description {
+        font-size: 12px;
+    }
+
 }
 /* Конец правок от 30 июля 2020*/
