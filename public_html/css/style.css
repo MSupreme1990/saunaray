@@ -126,7 +126,7 @@ header > video {
     text-align: right;
  }
  .top_menu .phone a {
-    line-height: 3.5;
+    line-height: 2.5;
     display: inline-block;
     list-style: none;
     font-size: 18px;
@@ -1893,7 +1893,7 @@ html {
         border-bottom: 1px solid black;
         color: black;
         display: inline-block;
-        margin-bottom: 15px;
+        margin-bottom: 32px;
     }
 
     .other-sauna__title {
