@@ -126,10 +126,10 @@ header > video {
     text-align: right;
  }
  .top_menu .phone a {
-    line-height: 2.5;
+    line-height: 1.5;
     display: inline-block;
     list-style: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     color: black;
     font-family: Navigo-Bold;
@@ -1021,7 +1021,7 @@ footer .container {
   }
   .top_menu .address li {
     padding-right: 0px;
-    line-height: 2;
+    line-height: 1.5;
     font-size: 12px;
     display: block;
   }
@@ -1041,7 +1041,7 @@ footer .container {
     float: right;
   }
   .section-1 {
-    padding-top: 110px;
+    padding-top: 60px;
   }
 }
 @media (max-width: 530px) {
@@ -1849,7 +1849,7 @@ html {
 @media (max-width: 950px) {
 
     .article .aside_block_1 {
-        height: 250px;
+        height: 225px;
     }
 
     .article .aside_block_1 h2 {
@@ -1889,11 +1889,11 @@ html {
 
     .global-nav__item p {
         font-family: Navigo-Regular;
-        font-size: 14px;
-        border-bottom: 1px solid black;
-        color: black;
+        font-size: 16px;
+        border-bottom: 1px solid #0090d3;
         display: inline-block;
         margin-bottom: 32px;
+        color: #0090d3;
     }
 
     .other-sauna__title {
