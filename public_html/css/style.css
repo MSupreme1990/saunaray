@@ -1807,6 +1807,10 @@ html {
 
 /* Правки от 30 июля 2020*/
 
+.price {
+    color: indianred;
+}
+
 .slider__nav--main {
     margin: 14px 0;
 }
@@ -1843,6 +1847,59 @@ html {
 
 .slider__nav--main .slick-active:focus {
     outline: none;
+}
+
+
+.article__information {
+    position: relative;
+}
+
+.article__quantity {
+    font-family: Navigo-Regular;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    z-index: 99999;
+    color: #f2f3f4;
+    text-shadow: 0 0 2px rgba(0,0,0,0.8);
+}
+
+.article__bprice {
+    font-family: Navigo-Regular;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    z-index: 99999;
+    color: #f2f3f4;
+    text-shadow: 0 0 2px rgba(0,0,0,0.8);
+}
+
+.img__quantity {
+    display: block;
+    background-image: url("../img/man.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 20px;
+    height: 18px;
+    z-index: 99999;
+    margin-right: 8px;
+}
+
+.img__bprice {
+    display: block;
+    background-image: url("../img/credit-card.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 20px;
+    height: 20px;
+    z-index: 99999;
+    margin-right: 8px;
 }
 
 
